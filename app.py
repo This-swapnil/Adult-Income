@@ -26,6 +26,10 @@ def predict():
             print(data)
             scaled = scaler.transform(data)
             result = model.predict(scaled)
+            if result[0] == 0:
+                result = "<=50K"
+            else:
+                result = '>50K'
             return render_template("result.html", result=result[0])
         except Exception as e:
             error = {'error': e}
