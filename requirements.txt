@@ -1,0 +1,11 @@
+Flask 
+Flask-Cors==3.0.10
+notebook 
+numpy 
+pandas==1.2.4
+pandas-profiling==3.0.0
+scikit-learn 
+scipy 
+seaborn
+statsmodels
+gunicorn
