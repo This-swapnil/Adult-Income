@@ -30,7 +30,7 @@ def predict():
                 result = "<=50K"
             else:
                 result = '>50K'
-            return render_template("result.html", result=result[0])
+            return render_template("result.html", result=result)
         except Exception as e:
             error = {'error': e}
             return render_template('404.html', error=error)
